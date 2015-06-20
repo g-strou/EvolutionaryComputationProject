@@ -1,0 +1,19 @@
+- The main program
+
+The folder MSolitaire can be put into the ecj/ec/app folder. Then the program can run like any other ECJ problem
+with the specification of the parameters file(.params). Two sample parameter files, optimFunc1.params and optimFunc2.params, used for the second stage of our experiment, are provided in the ResultsAndOther folder.
+
+
+-The "ResultsAndOther" folder.
+
+This folder contains some solution files, like 124.txt, 118.txt, as well as files extracted by the final version of our program, that were created during our experiment. It also contains a sample bash file (runOptimized.sh) created by solTester to conduct the second stage of the experiment and the globalFFD and globalTuned text files which contain the aggregated results of both stages of our experiment. An extra file globalGetBest containing the results of ten runs of a function set including ERCs and GetBest is given. We omitted the detailed output files to save some space, but they can be provided if needed. Files 110.dot, 110.txt are a sample of the output files of the final version of the program(110.stat file has been omitted). Dot files can be opened by Graphviz and provide a visualization of the tree genotype. 
+
+
+-The executable solTester
+
+solTester is our java executable that can be used to visualize a solution progressively. It's source code is included in the folder solTester code.
+The executable has two modes, one when the mouselistener is on and the user can play the game selecting the available (green) moves. The other is when the user loads a solution pressing the "LoadMoves" button and selecting a text file that contains the string "TO BE USED AS INPUT" along with the moves in proper format, at the end of the file. Files of this kind are created by our main program. Files 124.txt, 118.txt and 110.txt can be opened this way. 110.txt is the latest one and it also provides the actions taken at each step as strings.
+"Start" buttton creates a new grid with the specified number of dots per side. To visualize some solutions at least 31 dots per side are required.
+"Next Move" button adds progressively the moves along with their description in the text area. "All Moves" button adds all the moves of the solution
+The "Make Experiment" button is disabled. It uses the ExperimentHandler code to produce a bash file used to perform our experiment. This class was used with modifications to produce the neccessary bash files for both stages of our experiment. 
+

@@ -1,0 +1,23 @@
+parent.0 = ../../gp/koza/koza.params
+breed.elite.0 = 2
+
+select.tournament.size=2 
+gp.koza.ns.terminals=0.1 
+gp.koza.ns.nonterminals=0.9 
+gp.koza.half.max-depth=4
+gp.koza.half.min-depth=1 
+
+gp.fs.size = 1
+gp.fs.0.name = f0
+gp.fs.0.size = 4
+gp.fs.0.func.0 = ec.app.msolitaire.func.Progn2
+gp.fs.0.func.0.nc = nc2
+gp.fs.0.func.1 = ec.app.msolitaire.func.Progn3
+gp.fs.0.func.1.nc = nc3
+gp.fs.0.func.2= ec.app.msolitaire.func.MSolERC
+gp.fs.0.func.2.nc = nc0
+gp.fs.0.func.3= ec.app.msolitaire.func.GetClosestToLast
+gp.fs.0.func.3.nc = nc0
+eval.problem = ec.app.msolitaire.MSol
+eval.problem.data = ec.app.msolitaire.MSolData
+stat = ec.app.msolitaire.MSolStatistics
