@@ -29,6 +29,7 @@ the most successful solutions found by my program.
 The big yellow dot has not any functional role, only visualizes a point of reference that is used
 internally.
 
+The info file is the one submitted with the project describing where the ECJ code must be set to run in the ECJ folders
 
 -----------------------------------------------------------------
 
