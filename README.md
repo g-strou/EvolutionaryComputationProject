@@ -40,6 +40,3 @@ linuxMsolitaire.exe is an executable implementing the game that was given with t
 to be used by the program.
 
 The folder solTesterCode the code of the executable solTester. 
-
-
-Overall the project was evaluated as an excellent one and the high scores achieved as exceptionally good.  
